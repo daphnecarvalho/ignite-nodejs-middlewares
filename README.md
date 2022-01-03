@@ -22,6 +22,15 @@ http://localhost:3333
 * [<span style="color:#ffc000">PATCH</span>] /:id/done (Header: username)
 * [<span style="color:#ff0000">DELETE</span>] /:id
 (Header: username)
+
+## Tests
+<p>
+Test Suites: 6 total
+</p>
+<p>
+Tests: 22 total
+</p>
+
 ## :orange_book: Requirements
 
 - Criação de um usuário com `name` e `username`
