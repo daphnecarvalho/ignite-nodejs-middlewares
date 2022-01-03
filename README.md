@@ -1,9 +1,28 @@
-# TODOs
+# TODOs - Challenge: Middlewares
 
-Aplicação para gerenciar tarefas.
-## :computer: Projeto
+Instructions: [Trabalhando com Middlewares](https://www.notion.so/Desafio-02-Trabalhando-com-middlewares-4f89bf538c2e4ee291382b92bdc36790).
 
-### :orange_book: Requisitos
+Application for managing TODOs.
+
+## Base URL
+http://localhost:3333
+
+## Routes
+
+### /users
+
+* [<span style="color:#663399">GET</span>] /:id
+* [<span style="color:#79c900">POST</span>] /
+* [<span style="color:#ffc000">PATCH</span>] /:id/pro
+
+### /todos
+* [<span style="color:#663399">GET</span>] / (Header: username)
+* [<span style="color:#79c900">POST</span>] / (Header: username)
+* [<span style="color:#ff8c00">PUT</span>] /:id (Header: username)
+* [<span style="color:#ffc000">PATCH</span>] /:id/done (Header: username)
+* [<span style="color:#ff0000">DELETE</span>] /:id
+(Header: username)
+## :orange_book: Requirements
 
 - Criação de um usuário com `name` e `username`
 - CRUD de TODOs para cada usuário
@@ -16,13 +35,13 @@ Aplicação para gerenciar tarefas.
 - Plano Pro que irá permitir criar *todos* ilimitados
 
 
-### :straight_ruler: Regras de negócio
+## :straight_ruler: Business rules
 
-#### :ok_woman: Teste de Usuários
+### :ok_woman: Users Test
 - [x] Should be able to create a new user
 - [x] Should not be able to create a new user when username already exists
 
-#### :page_facing_up: Teste de _todos_
+### :page_facing_up: _todos_ Test
 - [x] Should be able to list all user's todos
 - [x] Should be able to create a new todo
 - [x] Should be able to update a todo
@@ -32,7 +51,7 @@ Aplicação para gerenciar tarefas.
 - [x] Should be able to delete a todo
 - [x] Should not be able to delete a non existing todo
 
-#### :page_facing_up: Teste de Middlewares
+### :page_facing_up: Middlewares Test
 - [x] Should be able to find user by username in header and pass it to request.user
 - [x] Should not be able to find a non existing user by username in header
 - [x] Should be able to let user create a new todo when is in free plan and have less than ten todos
@@ -45,15 +64,22 @@ Aplicação para gerenciar tarefas.
 - [x] Should be able to find user by id route param and pass it to request.user
 - [x] Should not be able to pass user to request.user when it does not exists
 
-
-### :memo: Executando o Projeto
+## :memo: Project commands
+### Prepare project
 
 ```bash
-# Instale as dependências
-$ yarn
+  # Install dependencies
+  yarn install
+```
+### Run project
 
-# Execute o projeto
-$ yarn dev
+```bash
+  # Run project
+  yarn dev
+```
+### Run tests
 
-# Execute os testes
-$ yarn test
+```bash
+  # Run tests
+  yarn test
+```
