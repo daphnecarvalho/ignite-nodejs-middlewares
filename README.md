@@ -23,17 +23,9 @@ http://localhost:3333
 * [<span style="color:#ff0000">DELETE</span>] /:id
 (Header: username)
 
-## Tests
-<p>
-Test Suites: 6 total
-</p>
-<p>
-Tests: 22 total
-</p>
-
 ## :orange_book: Requirements
 
-- Criação de um usuário com `name` e `username`
+- Criação de um usuário com `name` e `username`
 - CRUD de TODOs para cada usuário
   1. Listar todos os *todos*;
   2. Criar um novo *todo*;
@@ -43,9 +35,7 @@ Tests: 22 total
 - Plano grátis onde o usuário só pode criar até dez *todos*
 - Plano Pro que irá permitir criar *todos* ilimitados
 
-
 ## :straight_ruler: Business rules
-
 ### :ok_woman: Users Test
 - [x] Should be able to create a new user
 - [x] Should not be able to create a new user when username already exists
@@ -72,6 +62,14 @@ Tests: 22 total
 - [x] Should not be able to put user and todo in request when todo does not exists
 - [x] Should be able to find user by id route param and pass it to request.user
 - [x] Should not be able to pass user to request.user when it does not exists
+
+## Tests
+<p>
+Test Suites: 6 total
+</p>
+<p>
+Tests: 22 total
+</p>
 
 ## :memo: Project commands
 ### Prepare project
